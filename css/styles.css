@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(#822c70, #88488c);
+}
+body .container {
+  width: min(80%, 500px);
+  text-align: center;
+}
+body .container h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 50px 0;
+}
+body .container .counters {
+  width: 100%;
+  display: inline-flexbox;
+}
+body .container .counters .item {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  color: #fff;
+}
+body .container .counters .item i {
+  font-size: 2rem;
+}
+body .container .counters .item .counter {
+  margin-top: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+body .container .counters .item .counter__text {
+  font-size: 0.7rem;
+}
+body .container .counters .item:hover {
+  background-color: rgba(55, 48, 97, 0.4);
+  border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+  .counters {
+    display: flex;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=styles.css.map */
